@@ -1,6 +1,6 @@
 
 const prodConfig = {
-    KEY_URI: process.env.KEY_URI,
+    KEY_URI: process.env.KEY_URI
  
 }
 
