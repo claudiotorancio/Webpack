@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon backend/index.js --ignore frontend",
     "start": "cross-env NODE_ENV=production node backend/index.js",
-    "postinstall": "npm run build",
-    "build": "cross-env NODE_ENV=production webpack --prefix public",
+    "postibuild": "cross-env NODE_ENV=production webpack ",
+    "build": "npm install",
     "server:dev": "webpack-dev-server"
   },
   "keywords": [],
