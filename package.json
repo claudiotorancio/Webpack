@@ -8,8 +8,8 @@
     "start": "cross-env NODE_ENV=production node backend/index.js",
     "postinstall": "npm run build",
     "build": "cross-env NODE_ENV=production webpack",
-    "server:dev": "webpack-dev-server",
-    "vercel-build": "npm run build"
+    "server:dev": "webpack-dev-server"
+    
   },
   "keywords": [],
   "author": "",

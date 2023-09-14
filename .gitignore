@@ -2,3 +2,4 @@
 backend/public
 dev.js
 node_modules
+.vercel
