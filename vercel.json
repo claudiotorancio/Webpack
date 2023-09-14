@@ -1,0 +1,9 @@
+{
+    "functions": {
+      "api/books": {
+        "handler": "api/books",
+        "memory": 128,
+        "maxDuration": 10
+      }
+    }
+}
