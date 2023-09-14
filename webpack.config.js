@@ -11,7 +11,7 @@ module.exports = {
     mode: 'production',
     entry: './frontend/app.js',
     output: {
-        path: path.join(__dirname, 'backend/public'),
+        path: path.join(__dirname, '/backend/public'),
         filename: 'js/bundle.js' 
         },
 
