@@ -1,5 +1,5 @@
 const { default: mongoose } = require("mongoose");
-const config = require("../config");
+const KEY_URI = process.env.KEY_URI
 
 
 const connectToDatbase = async () => {
