@@ -1,9 +1,12 @@
 {
-    "functions": {
-      "api/books": {
-        "handler": "api/books",
-        "memory": 128,
-        "maxDuration": 10
-      }
-    }
+    
+ 
+
+        "routes": [
+          {
+            "src": "/", "dest": "index.js"},
+          {
+            "src": "/api/books", "methods": ["POST"],"dest": "./routes/books.js"}
+          ]
+        
 }
