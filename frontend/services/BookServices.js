@@ -13,7 +13,7 @@ class BookService {
             method: 'POST',
             body: book
         });
-        const data = await response.json();
+        const data = await response.json(book);
         console.log(data)
     }
     async deleteBook(bookId) {
