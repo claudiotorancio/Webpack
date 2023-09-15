@@ -1,10 +1,7 @@
 
-if(process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
+require('dotenv').config();
 
 
-console.log(process.env.KEY_URI)
 
 const express = require('express')
 const connectToDatbase = require('./database.js')

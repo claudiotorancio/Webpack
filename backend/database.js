@@ -1,10 +1,11 @@
 const { default: mongoose } = require("mongoose");
+const config = require("../config");
 
 
 
 const connectToDatbase = async () => {
     try{
-        mongoose.connect(process.env.KEY_URI, {
+        mongoose.connect(config.KEY_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
