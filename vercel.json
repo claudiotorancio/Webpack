@@ -1,6 +1,0 @@
-{
-    "version": 2,
-    "redirects": [
-        { "source": "/api/books", "destination": "/index.html", "permanent": false }
-      ]
-  }
