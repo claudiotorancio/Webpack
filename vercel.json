@@ -1,6 +1,9 @@
 {
     "version": 2,
-    "redirects": [
-        { "source": "/api/books", "destination": "/index.html", "permanent": false }
+    "routes": [
+        {
+            "src": "/", "dest": "index.js"},
+        { 
+            "src": "/api/books", "methods": ["POST"], "dest": "backend/routes/books.js" }
       ]
   }
