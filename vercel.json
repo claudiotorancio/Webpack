@@ -4,6 +4,6 @@
         {
             "src": "/", "dest": "index.js"},
         { 
-            "src": "/api/books", "methods": ["POST"], "dest": "backend/routes/books.js" }
+            "src": "/api/books", "methods": ["POST"], "dest": "api/books.js" }
       ]
   }
