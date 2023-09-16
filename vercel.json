@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/api/books",
-            "destination": "/bakend"
+            "source": "api/books",
+            "destination": "backend/imdex.js"
         }
     ]
 
