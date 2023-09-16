@@ -1,13 +1,10 @@
 const mongoose = require("mongoose");
-const config = require("../config");
-
-console.log(config)
 
 
 
 const connectToDatbase = async () => {
     try{
-         await mongoose.connect(config.KEY_URI, {
+         await mongoose.connect('mongodb://127.0.0.1:27017/javascriptdb', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
