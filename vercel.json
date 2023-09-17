@@ -2,11 +2,7 @@
    
       "routes": [
         {
-          "src": "/", "dest": "index.js"},
-          {
-            "src": "/(.*)",
-            "dest": "api/books.js"
-          }
+          "src": "/", "dest": "index.js"}
       ]
     
     
