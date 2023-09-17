@@ -4,7 +4,7 @@ require('dotenv').config();
 
 
 const express = require('express')
-const connectToDatbase = require('./database.js')
+const connectToDatbase = require('./api/database.js')
 const morgan = require('morgan')
 const multer = require('multer')
 const path = require('path')
@@ -37,7 +37,7 @@ app.use(cors())
 
 
 
-app.use('/api/books', require('./routes/books.js'))
+app.use('/api/books', require('./api/books.js'))
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')))
