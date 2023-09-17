@@ -2,9 +2,9 @@
     "version": 2,
   "builds": [
     {
-      "src": "api/books",
-      "use": "@vercel/node"
-    }
+      "src": "/", "use": "/backend/index.js"},
+      {
+        "src": "/api/books", "use": "/backend/routes/books.js"}  
   ],
   "routes": [
     {
