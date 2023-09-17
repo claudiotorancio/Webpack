@@ -4,7 +4,7 @@ require('dotenv').config();
 
 
 const express = require('express')
-const connectToDatbase = require('./api/database.js')
+const connectToDatbase = require('./backend/database.js')
 const morgan = require('morgan')
 const multer = require('multer')
 const path = require('path')
