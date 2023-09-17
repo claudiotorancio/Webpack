@@ -4,6 +4,6 @@
     {
       "src": "/", "use": "/backend/index.js"},
       {
-        "src": "/api/books", "methods": "POST", "dest": "backend/routes/books.js"}  
+        "src": "/api/books", "methods": "POST", "use": "backend/routes/books.js"}  
   ]
 }
