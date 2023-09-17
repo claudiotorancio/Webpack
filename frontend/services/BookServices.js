@@ -4,26 +4,30 @@ class BookService {
     }
 
     async getBooks() {
+        try {
         const response = await fetch(this.URI);
-        const books = await JSON.parse(response);
+        const books = await response.json();
         return books
+        }catch (error) {
+            console.error('Error durante la solicitud:', error);
+          }
     }
     async postBook(book) {
-        const response = await fetch(this.URI, {
+        const res = await fetch(this.URI, {
             method: 'POST',
             body: book
         });
-        const data = await JSON.parse(response);
+        const data = await res.json();
         console.log(data)
     }
     async deleteBook(bookId) {
-        const response = await fetch(`${this.URI}/${bookId}`, {
+        const res = await fetch(`${this.URI}/${bookId}`, {
             headers: {
                 'Content-type': 'application/json'
             },
             method: 'DELETE',
         });
-        const data = await JSON.parse(response);
+        const data = await res.json();
         console.log(data);
     }
 }
