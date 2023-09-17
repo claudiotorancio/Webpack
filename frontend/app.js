@@ -2,9 +2,9 @@
 import UI from './UI.js';
 import './styles/app.css';
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded',  () => {
     const ui = new UI();
-    await ui.renderBooks();
+    ui.renderBooks();
 })
 
 
