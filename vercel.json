@@ -1,6 +1,6 @@
 {
     "version": 2,
-  "rutes": [
+  "routes": [
     {
       "src": "/", "use": "/backend/index.js"},
       {
