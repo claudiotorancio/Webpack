@@ -4,12 +4,12 @@ class BookService {
     }
 
     async getBooks() {
-        const res = await fetch(this.URI);
-        const books = await res.json();
+        const response = await fetch(this.URI);
+        const books = await response.json();
         return books
     }
     async postBook(book) {
-        const response = await fetch(this.URI, {
+        const res = await fetch(this.URI, {
             method: 'POST',
             body: book
         });
@@ -17,7 +17,7 @@ class BookService {
         console.log(data)
     }
     async deleteBook(bookId) {
-        const response = await fetch(`${this.URI}/${bookId}`, {
+        const res = await fetch(`${this.URI}/${bookId}`, {
             headers: {
                 'Content-type': 'application/json'
             },
