@@ -4,7 +4,7 @@ require('dotenv').config();
 
 
 const express = require('express')
-const connectToDatbase = require('./database.js')
+const connectToDatbase = require('./backend/database.js')
 const morgan = require('morgan')
 const multer = require('multer')
 const path = require('path')
@@ -22,7 +22,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(morgan('dev'));
 
 const storage = multer.diskStorage({
-    destination: path.join(__dirname, 'public/uploads'),
+    destination: path.join(__dirname, './backend/public/uploads'),
     filename(req, file, cb) {
         cb(null, new Date().getTime() + path.extname(file.originalname));
     }
@@ -37,10 +37,10 @@ app.use(cors())
 
 
 
-app.use('/api/books', require('./routes/books.js'))
+app.use('/api/books', require('./backend/routes/books.js'))
 
 //Static files
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'backend', 'public')))
 
 
 //Server Starter
