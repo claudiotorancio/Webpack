@@ -1,9 +1,17 @@
 {
     "version": 2,
+  "builds": [
+    {
+      "src": "backend/index.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
-      "src": "/", "use": "/backend/index.js"},
-      {
-        "src": "/api/books", "methods": "POST", "use": "backend/routes/books.js"}  
+      "src": "/(.*)",
+      "use": "/"
+    }
   ]
+
+
 }
