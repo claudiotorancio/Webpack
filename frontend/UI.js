@@ -16,9 +16,7 @@ class UI {
        <div class="container p-4">
         <div class="card m-2">
             <div class= "row justify-content-md-center">
-                <div class="col-md-4">
-                    <img src="${book.imagePath}" alt="" class="img-fluid"/>
-                </div>
+                
                     <div class="col-md-8">
                         <div class="card-block px-2">
                             <h4 class="card-title">${book.title}</h4>
