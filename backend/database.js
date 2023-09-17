@@ -7,7 +7,7 @@ console.log(config)
 
 const connectToDatbase = async () => {
     try{
-         mongoose.connect(config.KEY_URI, {
+         await mongoose.connect(config.KEY_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
