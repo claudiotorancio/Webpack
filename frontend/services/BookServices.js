@@ -14,14 +14,8 @@ class BookService {
             method: 'POST',
             body: book
         });
-    
-        if (res.status === 200) {
-            const data = await res.json();
-            console.log(data);
-        } else {
-            // Manejar el error, mostrar un mensaje al usuario, etc.
-            console.error('Error al realizar la solicitud POST:', res.status);
-        }
+        const data = await res.json();
+        console.log(data)
     }
     async deleteBook(bookId) {
         const res = await fetch(`${this.URI}/${bookId}`, {
