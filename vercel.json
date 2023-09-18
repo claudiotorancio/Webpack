@@ -1,14 +1,19 @@
 {
-   
-      "routes": [
-        {
-          "src": "/", "dest": "index.js"}
-      ]
-    
-    
+  "routes": [
+    {
+      "src": "/api/books",
+      "methods": ["POST"],
+      "dest": "/frontend/services/BookServices.js"
+    },
+    {
+      "src": "/api/books",
+      "methods": ["GET"],
+      "dest": "/frontend/services/BookServices.js"
+    },
+    {
+      "src": "/api/books/:id",
+      "methods": ["DELETE"],
+      "dest": "/frontend/services/BookServices.js"
     }
-    
-
-    
-  
-  
+  ]
+}
