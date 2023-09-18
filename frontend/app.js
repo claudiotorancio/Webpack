@@ -33,7 +33,7 @@ document.getElementById('book-form')
         if(e.target.classList.contains('delete')) {
            const ui = new UI();
            ui.deleteBook(e.target.getAttribute('_id'));
-           ui.renderMessage('Book added', 'danger', 2000)
+           ui.renderMessage('Book delete', 'danger', 2000)
         }
         e.preventDefault();
     })
