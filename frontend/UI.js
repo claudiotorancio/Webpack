@@ -1,5 +1,5 @@
 
-import BookService from '../api/BookServices,js';
+import BookService from '../api/BookServices.js';
 const bookService = new BookService();
 import { format } from 'timeago.js';
 
