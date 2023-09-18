@@ -1,19 +1,33 @@
 {
-  "routes": [
-    {
-      "src": "/api/books",
-      "methods": ["POST"],
-      "dest": "/api/BookServices.js"
-    },
-    {
-      "src": "/api/books",
-      "methods": ["GET"],
-      "dest": "/api/BookServices.js"
-    },
-    {
-      "src": "/api/books/:id",
-      "methods": ["DELETE"],
-      "dest": "/api/BookServices.js"
-    }
-  ]
-}
+   
+      "routes": [
+        {
+          "src": "/", "dest": "index.js"},
+        
+              {
+                "src": "/api/books",
+                "methods": ["POST"],
+                "dest": "/api/BookServices.js"
+              },
+              {
+                "src": "/api/books",
+                "methods": ["GET"],
+                "dest": "/api/BookServices.js"
+              },
+              {
+                "src": "/api/books/:id",
+                "methods": ["DELETE"],
+                "dest": "/api/BookServices.js"
+              }
+            ]
+          }
+
+      
+    
+    
+    
+    
+
+    
+  
+  
