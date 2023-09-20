@@ -5,7 +5,7 @@ class BookService {
 
     async getBooks() {
         const response = await fetch(this.URI);
-        console.log(this.URI)
+        console.log(response)
         const books = await response.json();
         return books
     }
@@ -30,3 +30,4 @@ class BookService {
 }
 
 export default BookService;
+

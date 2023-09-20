@@ -12,6 +12,11 @@ router.get('/', async (req, res) => {
     res.json(books)
 });
 
+console.log(router.get('/', async (req, res) => {
+    const books = await Book.find()
+    res.json(books)
+}))
+
 router.post('/', async (req, res) => {
     const{title, author, isbn } = req.body;
     const imagePath = '/uploads/' + req.file.filename

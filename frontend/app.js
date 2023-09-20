@@ -26,6 +26,7 @@ document.getElementById('book-form')
         ui.renderMessage('New book added', 'success', 3000)
 
         e.preventDefault();
+       
     });
 
     document.getElementById('books-cards')
@@ -33,7 +34,7 @@ document.getElementById('book-form')
         if(e.target.classList.contains('delete')) {
            const ui = new UI();
            ui.deleteBook(e.target.getAttribute('_id'));
-           ui.renderMessage('Book delete', 'danger', 2000)
+           ui.renderMessage('Libro borrado', 'danger', 2000)
         }
         e.preventDefault();
     })
