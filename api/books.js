@@ -5,7 +5,7 @@ const router = Router();
 const {unlink} = require('fs-extra')
 const path = require('path')
 
-const Book = require('../models/Book.js')
+const Book = require('../backend/models/Book.js')
 
 router.get('/', async (req, res) => {
     const books = await Book.find()

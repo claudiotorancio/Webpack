@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const path = require('path')
 
-const {tomar} = require('../backend/routes/books.js')
-const {postear} = require('../backend/routes/books.js')
-const {borrar} = require('../backend/routes/books.js')
+const {tomar} = require('./books.js')
+const {postear} = require('./books.js')
+const {borrar} = require('./books.js')
 
 
 
