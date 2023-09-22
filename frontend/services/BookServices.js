@@ -1,18 +1,19 @@
 
 
+
 class BookService {
     constructor() {
-        this.MONGODB_URI ='/api/books'
+        this.URI = '/api/books'
     }
 
     async getBooks() {
-        const response = await fetch(this.MONGODB_URI);
+        const response = await fetch(this.URI);
         console.log(response)
         const books = await response.json();
         return books
     }
     async postBook(book) {
-        const res = await fetch(this.MONGODB_URI, {
+        const res = await fetch(this.URI, {
             method: 'POST',
             body: book
         });
@@ -20,7 +21,7 @@ class BookService {
         console.log(data)
     }
     async deleteBook(bookId) {
-        const res = await fetch(`${this.MONGODB_URI}/${bookId}`, {
+        const res = await fetch(`${this.URI}/${bookId}`, {
             headers: {
                 'Content-type': 'application/json'
             },
