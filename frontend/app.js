@@ -1,6 +1,8 @@
 
-import UI from './UI.js';
 import './styles/app.css';
+
+import UI from './UI.js';
+
 
 document.addEventListener('DOMContentLoaded',  () => {
     const ui = new UI();

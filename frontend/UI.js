@@ -6,6 +6,7 @@ import { format } from 'timeago.js';
 class UI {
     async renderBooks() {
         const books = await bookService.getBooks();
+        console.log(books)
         const booksCardContainer = document.getElementById('books-cards')
         booksCardContainer.innerHTML = '';
         books.forEach(book => {

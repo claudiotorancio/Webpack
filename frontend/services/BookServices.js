@@ -1,6 +1,8 @@
+
+
 class BookService {
     constructor() {
-        this.URI ='/api/books'
+        this.URI = MONGODB_URI
     }
 
     async getBooks() {
