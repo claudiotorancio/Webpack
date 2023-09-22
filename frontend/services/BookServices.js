@@ -1,3 +1,4 @@
+import { MONGODB_URI } from "../../config";
 
 
 class BookService {
