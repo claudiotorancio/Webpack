@@ -1,19 +1,18 @@
-import { MONGODB_URI } from "../../config";
 
 
 class BookService {
     constructor() {
-        this.URI = MONGODB_URI
+        this.MONGODB_URI ='/api/books'
     }
 
     async getBooks() {
-        const response = await fetch(this.URI);
+        const response = await fetch(this.MONGODB_URI);
         console.log(response)
         const books = await response.json();
         return books
     }
     async postBook(book) {
-        const res = await fetch(this.URI, {
+        const res = await fetch(this.MONGODB_URI, {
             method: 'POST',
             body: book
         });
@@ -21,7 +20,7 @@ class BookService {
         console.log(data)
     }
     async deleteBook(bookId) {
-        const res = await fetch(`${this.URI}/${bookId}`, {
+        const res = await fetch(`${this.MONGODB_URI}/${bookId}`, {
             headers: {
                 'Content-type': 'application/json'
             },
