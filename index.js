@@ -1,7 +1,7 @@
 
+
+
 require('dotenv').config();
-
-
 
 const express = require('express')
 
@@ -38,7 +38,7 @@ app.use(cors())
 
 
 
-app.use('/api/books', require('./api/books.js'))
+app.use( '/api/books' , require('./api/books.js') )
  
 //Static files
 app.use(express.static(path.join(__dirname, 'backend', 'public')))
