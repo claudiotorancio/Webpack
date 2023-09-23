@@ -13,9 +13,6 @@ router.get('/api/books', async (req, res) => {
 });
 
 router.post('/api/books', async (req, res) => {
-    if(!req.file) {
-        return res.status(400).json({ message: 'No se adjuntó ningún archivo.' });
-    }
     const{title, author, isbn } = req.body;
     const imagePath = '/uploads/' + req.file.filename
     const newBook = new Book ({title, author, isbn, imagePath});
