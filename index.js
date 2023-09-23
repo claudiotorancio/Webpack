@@ -2,12 +2,10 @@
 require('dotenv').config();
 
 const express = require('express')
-
 const morgan = require('morgan')
 const multer = require('multer')
 const path = require('path')
 const cors = require('cors')
-
 
 //initializacion
 const app = express()
@@ -35,7 +33,7 @@ app.use(express.json());
 app.use(cors())
 
 
-    app.use( '/api/books' , require('./api/books.js') )
+    app.use('/api/books', require('./api/books.js'))
 
 
  
