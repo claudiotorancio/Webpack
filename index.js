@@ -1,6 +1,4 @@
 
-
-
 require('dotenv').config();
 
 const express = require('express')
@@ -37,11 +35,7 @@ app.use(express.json());
 app.use(cors())
 
 
-if(process.env.NODE_ENV === 'production') {
-    app.use(process.env.MONGODB_URI)
-} else{
     app.use( '/api/books' , require('./api/books.js') )
-}
 
 
  

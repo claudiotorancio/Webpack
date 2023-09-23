@@ -3,7 +3,7 @@
 
 class BookService {
     constructor() {
-        this.URI = '/api/books' || MONGODB_URI
+        this.URI = '/api/books' || process.env.MONGODB_URI
     }
 
     async getBooks() {
