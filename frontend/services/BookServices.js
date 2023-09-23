@@ -3,7 +3,7 @@
 
 class BookService {
     constructor() {
-        this.URI = ''
+        this.URI = '/'
     }
 
     async getBooks() {

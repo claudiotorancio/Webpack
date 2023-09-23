@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/",
-      "dest": "./routes/books.js" 
+      "src": "/api/books",
+      "dest": "./api/books.js" 
     },
     {
     "headers": {
