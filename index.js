@@ -33,7 +33,7 @@ app.use(express.json());
 app.use(cors())
 
 
-    app.use('/', require('./api/books.js'))
+    app.use('/api/books', require('./api/books.js'))
 
 
  
