@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/api/books",
-      "dest": "./api/books.js" 
+      "dest": "index.js" 
     },
     {
     "headers": {

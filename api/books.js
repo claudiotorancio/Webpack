@@ -13,25 +13,13 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    try {
-        const { title, author, isbn } = req.body;
+    const{title, author, isbn } = req.body;
+    const imagePath = '/uploads/' + req.file.filename
+    const newBook = new Book ({title, author, isbn, imagePath});
+    await newBook.save();
 
-        // Verifica si se proporciona un archivo en la solicitud.
-        if (!req.file) {
-            return res.status(400).json({ message: 'No se proporcionó un archivo de imagen.' });
-        }
-
-        const imagePath = '/uploads/' + req.file.filename;
-        const newBook = new Book({ title, author, isbn, imagePath });
-        await newBook.save();
-
-        res.json({ message: 'Libro guardado exitosamente.' });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Error al guardar el libro.' });
-    }
+    res.json({message:'Book saved'})
 });
-
 
 router.delete('/:id', async (req, res) => {
     const book = await Book.findByIdAndDelete(req.params.id)
