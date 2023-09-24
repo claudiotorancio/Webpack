@@ -8,7 +8,7 @@
     {
       "src": "/api/books", "methods": ["GET"],"dest": "backend/routes/books.js"},
       {
-        "src": "/aoi/books", "methods": ["POST"],"dest": "backend/routes/books.js"},
+        "src": "/api/books", "methods": ["POST"],"dest": "backend/routes/books.js"},
         {
           "src": "/api/books", "methods": ["DELETE"],"dest": "backend/routes/books.js"},
     {
@@ -16,9 +16,7 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
-    },
-    "src": "/.*",
-    "dest": "index.js"
+    }
   }
 ]
 }
