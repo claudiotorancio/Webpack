@@ -2,9 +2,15 @@
   "version": 2,
   "routes": [
     {
-      "src": "/api/books",
-      "dest": "/index.js" 
+      "src": "/",
+      "dest": "index.js" 
     },
+    {
+      "src": "/api/books", "methods": ["GET"],"dest": "backend/routes/books.js"},
+      {
+        "src": "/aoi/books", "methods": ["POST"],"dest": "backend/routes/books.js"},
+        {
+          "src": "/api/books", "methods": ["DELETE"],"dest": "backend/routes/books.js"},
     {
     "headers": {
         "Access-Control-Allow-Origin": "*",
