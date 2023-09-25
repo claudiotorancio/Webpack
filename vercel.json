@@ -6,11 +6,11 @@
       "dest": "index.js" 
     },
     {
-      "src": "/api/books", "methods": ["GET"],"dest": "./backend/routes/books.js"},
+      "src": "/api/books", "methods": ["GET"],"dest": "./api/books.js"},
       {
-        "src": "/api/books", "methods": ["POST"],"dest": "./backend/routes/books.js"},
+        "src": "/api/books", "methods": ["POST"],"dest": "./api/books.js"},
         {
-          "src": "/api/books", "methods": ["DELETE"],"dest": "./backend/routes/books.js"},
+          "src": "/api/books", "methods": ["DELETE"],"dest": "./api/books.js"},
     {
     "headers": {
         "Access-Control-Allow-Origin": "*",
