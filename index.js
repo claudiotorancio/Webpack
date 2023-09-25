@@ -10,7 +10,7 @@ const cors = require('cors')
 //initializacion
 const app = express()
 
-require('./api/database.js')
+require('./backend/database.js')
 
 //Settings
 const PORT = process.env.PORT || 3000;
